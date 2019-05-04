@@ -1,0 +1,31 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+	// create a program that would show the date in mm-dd-yyyy
+	int mm,dd,yyyy; 
+	
+	
+	cout << "input month" << endl;
+	cin >> mm ;
+	cout << "input date" << endl;
+	cin >> dd ;
+	cout << "input year" << endl;
+	cin >> yyyy ;
+	
+	
+	if (mm > 12 || dd > 31)
+	{
+		cout << "Your month and date exceeded my expectations! ";
+	}
+	else 
+	{
+		cout << "Your date today is: " << mm << " / "<< dd << " / "<< yyyy;
+		cout << "\nG'day mate!!!" << endl;
+	}
+	
+	_getch();
+	return 0;
+}
